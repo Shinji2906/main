@@ -1,0 +1,27 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+    color: black;
+    font-size: 30px;
+}
+#Marisa {
+    color: gold;
+}
+#Reimu {
+    color: red;
+}
+#Rinnosuke {
+    color: blue;
+}
+#Patchouli {
+    color: palevioletred;
+}
+#Rumia {
+    color: maroon;
+}
+a {
+    color: purple;
+}
