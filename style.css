@@ -1,0 +1,505 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: floralwhite;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* .row::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+/*OPTIONAL */
+.col-third {
+    width: 33.33333%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/* Quy tắc làm việc 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan chi tiết
+*/
+
+/* 
+1. Vị trí
+2. Kích thước (width, height,...)
+3. Màu sắc 
+4. Kiểu dáng [kiểu chữ (phông chữ, font-size,...)]
+*/
+
+
+#main  {
+
+}
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0 ,0 , 0.3);
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+
+#nav > li > a {
+    color: black;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a { 
+    color:black;
+    background-color: #ccc;
+    display: block;
+}
+
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0 ,0 , 0.3);
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0px 24px 0px 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#nav h1 {
+    font-size: 20px;
+    line-height: 45px;
+    padding: 0px 16px 0px 16px; 
+}
+
+/* search */
+#header .search-btn {
+    float: right;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: black;
+    font-size: 24px;
+    line-height: 46px;
+    padding: 0px 16px 0px 16px;
+}
+
+#header .search-icon:hover {
+    color: white;
+    background-color: red;
+    display: block;
+}
+
+
+/* slider */
+#slider {
+margin-top: 46px;
+padding-top: 50%;
+background: url('img/Sakura.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 68px;
+    width: 100%;
+    text-align:center;
+}
+#slider .text-heading {
+    font-weight: 600;
+    font-size: 54px;
+}
+#slider .text-description {
+    font-size: 36px;
+    margin-top: 24px;
+}
+
+
+
+
+/* content */
+#content {
+
+}
+
+#content .section-heading,
+#content .sub-heading {
+    text-align: center;
+}
+
+#content .section-heading {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .sub-heading {
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .food-list {
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+#content .food-item {  
+    text-align: center;
+}
+
+#content .food-item .food-name {
+    font-size: 15px;
+}
+
+#content .food-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+    border: solid salmon 1px;   
+}
+
+.clear {
+    clear: both;
+}
+
+/* tour section */
+.tour-section {
+    background-color: cornsilk;
+}
+
+.months {
+    background-color: white;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.months li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+}
+
+.months .sold-out {
+    background-color: red;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.months .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* places */
+.places-list {
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+.places-items {
+    width: 33.33333%;
+}
+.places-img {
+    width: 100%;
+    display: block;
+}
+.places-img:hover {
+    opacity: 0.8;
+}
+.places-body {
+    padding: 16px;
+    font-size: 15px;
+    background-color: bisque;
+}
+.place-heading {
+    font-size: 15px;
+    font-weight: 600px;
+}
+.place-time {
+    margin-top: 15px;
+    opacity: 0.8;
+}
+.place-description {
+    margin-top: 15px;
+}
+.place-buy-btn {
+    text-decoration: none;
+    color: white;
+    background-color: sandybrown;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: solid sandybrown 1px;
+    
+}
+
+.place-buy-btn:hover {
+    opacity: 0.6;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal .modal-container{
+    background: white;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn 0.3s ease;
+}
+.modal-container .modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 16px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: black;
+    background-color:#ccc;
+    opacity: 1;
+}
+
+.modal .modal-header {
+    background: sandybrown;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+.modal .modal-heading-icon{
+    font-size: 30px;
+    margin-right: 15px;
+}
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-tickets {
+    font-size: 15px;
+    background: sandybrown;
+    border: 5px;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 16px;
+    cursor: pointer;
+}
+
+#buy-tickets:hover {
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196f3;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+    
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit-btn {
+    background: sandybrown;
+    color: white;
+    border: solid sandybrown 1px;
+    padding: 10px 16px;
+    float: right;
+    cursor: pointer;
+}
+.form-submit-btn:hover {
+    opacity: 0.6;
+}
+
+.city-section img{
+    width: 100%;
+    text-align: center;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    
+}
+
+#footer .social-icon {
+    font-size: 20px;
+}
+
+#footer .copyright {
+    font-size: 15px;
+    opacity: 0.6;
+    margin-top: 12px;
+}
+
+#footer .social-icon a {
+    text-decoration: none;
+    color: sandybrown;
+}
+
+#footer .social-icon a:hover {
+    opacity: 0.5;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
